@@ -2671,7 +2671,7 @@ input, select, textarea {
 				padding: 1em;
 				border-radius: 4px;
 				border-bottom: 0;
-				color: #ffffff;
+				color:;
 				text-align: center;
 				text-decoration: none;
 				z-index: 3;
@@ -2682,12 +2682,17 @@ input, select, textarea {
 				}
 
 				.tiles article > a:hover {
-					color: #ffffff !important;
+					color: #ffffff!important;
 				}
 
-				.tiles article > a h2 {
+				.tiles article.style2 > a h2 {
 					margin: 0;
+					color: red;
 				}
+				.tiles article.style1 > a h2 {
+					margin: 0;
+					color: white;
+        }
 
 				.tiles article > a .content {
 					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -2711,10 +2716,17 @@ input, select, textarea {
 
 			.tiles article.style2 > .image:before {
 				background-color: white;
+				color: blue;
+
+
 			}
+
+
+
 
 			.tiles article.style3 > .image:before {
 				background-color: #7bd0c1;
+
 			}
 
 			.tiles article.style4 > .image:before {
